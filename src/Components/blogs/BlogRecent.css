@@ -1,0 +1,53 @@
+.blog{
+    background-color: aliceblue;
+    overflow: hidden;
+    height: auto;
+}
+.more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.more>:nth-child(1){
+    font-size: 1.5rem;
+    color: black;
+    font-weight: 500;
+    
+}
+.more>:nth-child(2){
+    text-decoration: none;
+    font-weight: 500;
+    color: blue;
+
+}
+.blogrecent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+.recent_box{
+    width: 20rem;
+    height:auto;
+    padding: 2rem;
+    background-color: #fff;
+    align-self: start;
+}
+
+@media screen and (max-width:950px) { 
+    .blog{
+        padding: 1rem;
+        height: 100%;
+    }
+    .blogrecent{
+        gap: 2rem;
+    }
+    .recent_box{
+        width: 18rem;
+        height: auto;
+    }
+}

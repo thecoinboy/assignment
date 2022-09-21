@@ -1,0 +1,79 @@
+.container_works h1{
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: black;
+    margin-top: 3rem;
+}
+
+.container_works{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+}
+
+.works_box {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 15rem;
+    max-height: auto;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.318);
+}
+
+.l_box img {
+    width: 246px;
+    height: 180px;
+}
+
+.r_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 2rem;
+}
+
+.date {
+    background-color: blue;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #fff;
+}
+
+.category {
+    font-size: 1.3remm;
+    font-weight: 400;
+    color: gray;
+}
+.popFull {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+@media screen and (max-width:950px) {
+    .works_box{
+        width: 100%;
+    }
+
+}
+
+
+@media screen and ( max-width:650px) {
+
+    .popFull{
+        flex-direction: column;
+        padding-top: 2rem;
+        padding: 3rem 1rem 3rem 1rem;
+    }
+    
+}
